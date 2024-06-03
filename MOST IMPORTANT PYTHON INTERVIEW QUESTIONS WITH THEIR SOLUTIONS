@@ -1,0 +1,346 @@
+1. **What is Python? List some popular applications of Python in the world of technology.**
+
+   Python is a widely-used general-purpose, high-level programming language created by Guido van Rossum in 1991 and developed further by the Python Software Foundation. It emphasizes code readability and allows programmers to express concepts with fewer lines of code.
+
+   **Applications of Python:**
+   - System Scripting
+   - Web Development
+   - Game Development
+   - Software Development
+   - Complex Mathematics
+
+2. **What are the benefits of using Python language as a tool in the present scenario?**
+
+   **Benefits of Python:**
+   - Object-Oriented Language
+   - High-Level Language
+   - Dynamically Typed Language
+   - Extensive Support Libraries
+   - Presence of Third-Party Modules
+   - Open Source and Community Development
+   - Portable and Interactive
+   - Cross-Platform Compatibility
+
+3. **Is Python a compiled language or an interpreted language?**
+
+   Python is both partially compiled and partially interpreted. Initially, the code is compiled into byte code, which is then interpreted by the Python Virtual Machine (PVM) according to the underlying platform.
+
+4. **What does the ‘#’ symbol do in Python?**
+
+   The ‘#’ symbol is used to comment out everything that follows on the line.
+
+5. **What is the difference between a Mutable datatype and an Immutable datatype?**
+
+   - **Mutable Data Types:** Can be edited at runtime. Examples: List, Dictionary.
+   - **Immutable Data Types:** Cannot be edited at runtime. Examples: String, Tuple.
+
+6. **How are arguments passed in Python - by value or by reference?**
+
+   In Python, arguments are passed by reference. Variables hold references to objects, and these references are passed to functions. You can change the objects if they are mutable, but not the references themselves.
+
+7. **What is the difference between a Set and a Dictionary?**
+
+   - **Set:** An unordered collection of unique elements that is iterable and mutable.
+   - **Dictionary:** An ordered collection of key-value pairs that is iterable and mutable.
+
+8. **What is List Comprehension? Give an example.**
+
+   List comprehension is a concise way to create lists based on existing iterables.
+
+   **Example:**
+   ```python
+   my_list = [i for i in range(1, 10)]
+   ```
+
+9. **What is a lambda function?**
+
+   A lambda function is an anonymous function that can have any number of parameters but only one statement.
+
+   **Example:**
+   ```python
+   a = lambda x, y: x * y
+   print(a(7, 19))
+   ```
+
+10. **What is a pass in Python?**
+
+   The `pass` statement is used to indicate a no-operation statement. It acts as a placeholder in a compound statement where nothing is to be written.
+
+11. **What is the difference between / and // in Python?**
+
+   - **/** represents precise division (result is a floating-point number).
+   - **//** represents floor division (result is an integer).
+
+   **Example:**
+   ```python
+   5 // 2  # Output: 2
+   5 / 2   # Output: 2.5
+   ```
+
+12. **How is exception handling done in Python?**
+
+   Exception handling in Python is done using the `try`, `except`, and `finally` blocks. The `try` block contains code that may throw an exception. The `except` block handles the exception, and the `finally` block contains code that executes regardless of whether an exception occurred or not.
+
+13. **What is the swapcase function in Python?**
+
+   The `swapcase` function is a string method that converts all uppercase characters to lowercase and vice versa. It alters the case of the characters in the string.
+
+   **Example:**
+   ```python
+   string = "GeeksforGeeks"
+   string.swapcase()  # Output: "gEEKSFORgEEKS"
+   ```
+
+14. **What is the difference between a for loop and a while loop in Python?**
+
+   - **For Loop:** Used to iterate through elements of a collection such as List, Tuple, Set, or Dictionary. It is used when the number of iterations is known.
+   - **While Loop:** Used for looping when only the end condition is known. It continues until the specified condition is no longer true.
+
+15. **Can we pass a function as an argument in Python?**
+
+   Yes, functions in Python can be passed as arguments to other functions. These functions are known as higher-order functions.
+
+16. **What are *args and **kwargs?**
+
+   - **`*args`:** Allows a function to accept any number of positional arguments.
+   - **`**kwargs`:** Allows a function to accept any number of keyword arguments.
+
+17. **Is indentation required in Python?**
+
+   Yes, indentation is required in Python to define the scope of code blocks. It is essential for code readability and structure.
+
+18. **What is scope in Python?**
+
+   - **Local Scope:** Variables defined inside a function, accessible only within that function.
+   - **Global Scope:** Variables defined outside any function, accessible throughout the module.
+   - **Module-Level Scope:** Global objects of the current module.
+   - **Outermost Scope:** Built-in names that can be called by the program.
+
+19. **What is a docstring in Python?**
+
+   Docstrings are documentation strings used to describe modules, functions, classes, and methods. They are declared using triple quotes and can be accessed using the `__doc__` attribute or the `help` function.
+
+20. **What is a dynamically typed language?**
+
+   - **Statically Typed Languages:** Data type of a variable is known at compile time.
+   - **Dynamically Typed Languages:** Data type of a variable is determined at runtime by the interpreter.
+
+21. **What is the break, continue, and pass in Python?**
+
+   - **Break:** Terminates the loop.
+   - **Continue:** Skips the current iteration and proceeds to the next iteration.
+   - **Pass:** Acts as a placeholder, performing no operation.
+
+22. **What are the built-in data types in Python?**
+
+   - **Numeric:** Integer, Float, Boolean, Complex.
+   - **Sequence Types:** String, List, Tuple, Range.
+   - **Mapping Types:** Dictionary.
+   - **Set Types:** Set, Frozen Set.
+
+23. **How do you floor a number in Python?**
+
+   The `floor()` function from the `math` module returns the largest integer not greater than the given number.
+
+   **Example:**
+   ```python
+   import math
+   math.floor(2.5)  # Output: 2
+   ```
+
+24. **What is the difference between xrange and range functions?**
+
+   - **Range:** Returns a list of numbers.
+   - **Xrange:** Returns a generator object (Python 2.x). In Python 3.x, `range` behaves like `xrange`.
+
+25. **What is Dictionary Comprehension? Give an example.**
+
+   Dictionary comprehension is a concise way to create dictionaries based on existing iterables.
+
+   **Example:**
+   ```python
+   my_dict = {i: i + 7 for i in range(1, 10)}
+   ```
+
+
+### 26. Is Tuple Comprehension possible? If yes, how, and if not why?
+
+Tuple comprehension is not possible in Python because it results in a generator, not a tuple comprehension. 
+
+Example: 
+```python
+(i for i in (1, 2, 3))
+```
+
+### 27. What is the difference between a List and a Tuple?
+
+- **List:**
+  - Lists are mutable.
+  - Lists consume more memory.
+  - Lists are better for operations like insertion and deletion.
+  - Iterations are time-consuming.
+
+- **Tuple:**
+  - Tuples are immutable.
+  - Tuples consume less memory.
+  - Tuples are better for accessing elements.
+  - Iterations are faster.
+
+### 28. What is the difference between a shallow copy and a deep copy?
+
+- A shallow copy creates a new instance that references the original elements, leading to faster execution.
+- A deep copy creates a new instance with copied values, resulting in slower execution.
+
+### 29. Which sorting algorithm is used by the sort() and sorted() functions in Python?
+
+Python uses the Tim Sort algorithm for sorting, which is a hybrid sorting algorithm derived from merge sort and insertion sort.
+
+### 30. What are Decorators in Python?
+
+Decorators are powerful tools in Python that allow modification of functions or methods using a specific syntax.
+
+### 31. How do you debug a Python program?
+
+You can debug a Python program using the command:
+```bash
+$ python -m pdb python-script.py
+```
+
+### 32. What are Iterators in Python?
+
+Iterators are objects that allow iteration over a collection of elements like lists or tuples, implementing the `__iter__` and `__next__` methods.
+
+### 33. What are Generators in Python?
+
+Generators are a way to implement iterators using a function that contains a `yield` statement. They do not require the `__iter__` and `__next__` methods.
+
+### 34. Does Python support multiple inheritance?
+
+Yes, Python supports multiple inheritance, allowing a class to derive from more than one parent class.
+
+### 35. What is Polymorphism in Python?
+
+Polymorphism is the ability to define methods in different classes with the same name. Python supports polymorphism.
+
+### 36. Define encapsulation in Python.
+
+Encapsulation is the concept of binding code and data together within a class in Python.
+
+### 37. How do you implement data abstraction in Python?
+
+Data abstraction is achieved by using interfaces and abstract classes in Python, hiding implementation details from the user.
+
+### 38. How is memory management done in Python?
+
+Python manages memory using a private heap space and an inbuilt garbage collector that recycles unused memory.
+
+### 39. How do you delete a file using Python?
+
+Files can be deleted using:
+```python
+import os
+os.remove('file_path')
+```
+or 
+```python
+os.unlink('file_path')
+```
+
+### 40. What is slicing in Python?
+
+Slicing is used to extract parts of a list or string. The syntax is:
+```python
+list[start:end:step]
+```
+
+### 41. What is a namespace in Python?
+
+A namespace ensures that all names in a program are unique to avoid naming conflicts.
+
+### 42. What is PIP?
+
+PIP (Python Installer Package) is a command-line tool for installing and managing Python packages.
+
+### 43. What is the zip function?
+
+The `zip()` function aggregates elements from multiple iterables into tuples.
+
+### 44. What are Pickling and Unpickling?
+
+- **Pickling:** Converting a Python object into a byte stream using the `pickle` module.
+- **Unpickling:** Retrieving the original Python object from the byte stream.
+
+### 45. What is monkey patching in Python?
+
+Monkey patching refers to dynamic modifications of a class or module at runtime.
+
+Example:
+```python
+# g.py
+class GeeksClass:
+    def function(self):
+        print("function()")
+
+import m
+
+def monkey_function(self):
+    print("monkey_function()")
+
+m.GeeksClass.function = monkey_function
+obj = m.GeeksClass()
+obj.function()
+```
+
+### 46. What is __init__() in Python?
+
+`__init__` is a special method called a constructor that initializes new objects of a class.
+
+### 47. Write a code to display the current time.
+
+```python
+import time
+
+current_time = time.localtime(time.time())
+print("Current time is", current_time)
+```
+
+### 48. What are Access Specifiers in Python?
+
+Python uses underscores to define access levels for class members:
+- **Public:** Accessible from anywhere.
+- **Protected:** Accessible within the class and its subclasses (`_single_leading_underscore`).
+- **Private:** Accessible only within the class (`__double_leading_underscore`).
+
+### 49. What are unit tests in Python?
+
+Unit testing is the process of testing the smallest parts of an application. Python uses the `unittest` framework for this purpose.
+
+### 50. What is the Python Global Interpreter Lock (GIL)?
+
+The GIL is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecodes at once.
+
+### 51. What are Function Annotations in Python?
+
+Function annotations allow adding metadata to function parameters and return values, which can be used by third-party libraries.
+
+### 52. What are Exception Groups in Python?
+
+Introduced in Python 3.11, Exception Groups allow handling multiple exceptions simultaneously using the `except*` syntax.
+
+### 53. What is the Python Switch Statement?
+
+Python 3.10 introduced structural pattern matching, allowing implementation of switch statements using `match` and `case`.
+
+### 54. What is the Walrus Operator?
+
+The Walrus Operator (`:=`) allows assignment of a value to a variable within an expression.
+
+Example:
+```python
+names = ["Jacob", "Joe", "Jim"]
+
+if (name := input("Enter a name: ")) in names:
+    print(f"Hello, {name}!")
+else:
+    print("Name not found.")
+```
